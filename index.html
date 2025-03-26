@@ -11,28 +11,31 @@
 
     <main>
         <section id="intro">
-            <h1>Wedding RSVP</h1>
+            <h1>Online Wedding RSVP</h1>
             <p>Book your seat now!</p>
         </section>
     </main>
-    <div>
-        <div>
-            <button></button>
-            <input type="text" placeholder="First Name, Last Name">
-            <input type="text" placeholder="Address">
-            <input type="text" placeholder="Phone Number">
+    <div id = "container">
+        <!-- Left section for attendees input -->
+        <div id = "leftSide">
+            
+            <input class = "input" type="text" placeholder="First Name, Last Name">
+            <input class = "input" type="text" placeholder="Address">
+            <input class = "input" type="text" placeholder="Phone Number">
+            <button id = "rsvpBtn">RSVP</button>
 
         </div>
-        <div>
-            <table>
-                <th></th>
-                <tr></tr>
-            </table>
+
+                <!-- Right section for list of attendees -->
+
+        <div id = "rightSide">
+            <h3 >Attendees</h3>
+            <ul id = "attendees"></ul>
             
 
         </div>
     </div>
-    <img src="./images/istockphoto-1190043570-2048x2048.jpg" alt="Wedding image">
+   
 
     <script src="index.js"></script>
 </body>
