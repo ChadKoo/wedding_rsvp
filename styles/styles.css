@@ -4,7 +4,15 @@
     margin:0; 
     overflow: auto;
  }
+#mainAbout {
+    margin-top: 150px;
+    color: azure;
+}
 
+#contact{
+    margin-top: 150px;
+    color: azure;
+}
  body {
     background-image:url("/images/germanMonastery.jpg");
     background-size: cover; 
@@ -95,12 +103,12 @@ main {
     font-size: 1.2em;
     color: #4c0303;
 }
-ul {
+#attendees {
     list-style-type: none;
     padding: 0;
 }
     
-li {
+#attendees li {
     padding: 10px 100px;
     border-bottom: 1px solid #ccc;
     color: azure;
@@ -127,7 +135,106 @@ input, select, textarea { /* Target all form fields */
     margin-bottom: 40px; /* Adds space between each input field */
    
 }
-p{
+#p{
     font-size: 20px;
     color: whitesmoke
+}
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+#navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Adjust the container layout */
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px; /* Offset for fixed navbar */
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Styling the form and attendees list */
+#leftSide, #rightSide {
+    width: 48%;
+}
+
+.input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftSide, #rightSide {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
