@@ -1,16 +1,17 @@
-// Get references to the form and attendees list
+// Variables referring to form and attendees list
 const rsvpForm = document.getElementById('rsvpForm');
 const attendeesList = document.getElementById('attendees');
 
 // Handle form submission
-rsvpForm.addEventListener('submit', (event) => {
-    event.preventDefault();  // Prevent the default form submission (page reload)
+rsvpForm.addEventListener('submit', (e) => {
+    e.preventDefault();  // Prevents page reload
 
     // Get input values using FormData
     const formData = new FormData(rsvpForm);
-    const fullName = formData.get('fullName').trim();
-    const address = formData.get('address').trim();
-    const phone = formData.get('phoneNumber').trim();
+    const fullName = document.getElementById('fullName').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const phone = document.getElementById('phoneNumber').value.trim();
+    
 
     // Basic validation to ensure no fields are empty
     if (!fullName || !address || !phone) {
