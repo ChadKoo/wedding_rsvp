@@ -20,19 +20,26 @@
     padding: 20px;
     /* overflow-x: hidden; */
     height: auto;
+    
 }
 
 #leftSide, #rightSide {
     width: 45%
   }
 #rightSide {
-    padding: 10px;
+    padding-top: 10px;
     /* background-color: blueviolet; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: rgba(59, 5, 52, 0.5);
-    margin-top: 50px;
+    
   
+    
+}
+#leftSide{
+    background-color: rgba(59, 5, 52, 0.5);
+    text-align: center;
+    height: 100vh
     
 }
 #rightside, h3{
@@ -42,83 +49,85 @@
     
 }
 #rsvpForm{
-    margin: 100px 30px;
+    padding-left: 5rem;
     width: 250px;
     height: 30px;
     font-size: 30px;
-    padding: 10px;
+    /* padding: 10px; */
     /* border: 2px solid #ccc; */
     border-radius: 5px;
     outline: none;
+    
 }
-#rsvpBtn:focus{
-    background-color: #4CAF50;
+#rsvpBtn:hover{
+    background-color: #012e10;
 }
+
+
 #rsvpBtn{
-    width: 275px;
-    height: 90px;
-    padding: 10px 10px 100px ;
+    width: 155px;
+    height: 45px;
+    
     outline: none;
     background-color: green;
     cursor: pointer;
     border-radius: 100px;
-    margin-top: 45px ;
-    margin-left: 50px;
-    font-size: 70px;
+    margin-top: 20px ;
+    margin-left: 100px;
+    font-size: 30px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+}
 
-    main {
-        text-align: center;
-        padding: 10px 0;
-        background-color: rgba(59, 5, 52, 0.5);
-    }
+main {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(59, 5, 52, 0.5);
+}
     
-    #intro h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        color: rgb(224, 196, 215);
-    }
+#intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: rgb(224, 196, 215);
+}
     
-    #intro p {
-        font-size: 1.2em;
-        color: #d35d5d;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
+#intro p {
+    font-size: 1.2em;
+    color: #4c0303;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
     
-    li {
-        padding: 10px 100px;
-        border-bottom: 1px solid #ccc;
-        color: azure;
-        font-size: 25px;
-        font-style: italic;
-    }
-
-    
-    /* Add space between the name and the cancel button */
-    #attendees li span {
-        margin-right: 10px; /* Adjust this value to create more space */
-    }
-    
+li {
+    padding: 10px 100px;
+    border-bottom: 1px solid #ccc;
+    color: azure;
+    font-size: 25px;
+    font-style: italic;
+}
+   
+ 
     /* Style for the cancel button */
-    .cancelBtn {
-        background-color: red;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 5px 10px;
-        margin-left: 30px;
-    }
+.cancelBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
     
-    .cancelBtn:hover {
-        background-color: darkred;
-    }
+.cancelBtn:hover {
+    background-color: darkred;
+}
 
-    input, select, textarea { /* Target all form fields */
-        margin-bottom: 40px; /* Adds space between each input field */
-        margin-left: 100px;
-    }
+input, select, textarea { /* Target all form fields */
+    margin-bottom: 40px; /* Adds space between each input field */
+   
+}
+p{
+    font-size: 20px;
+    color: whitesmoke
+}
