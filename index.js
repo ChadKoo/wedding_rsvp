@@ -26,7 +26,7 @@ rsvpForm.addEventListener('submit', (e) => {
     };
 
     // Send the data to the server using fetch POST
-    fetch('https://raw.githubusercontent.com/ChadKoo/wedding_rsvp/master/db.json', {
+    fetch('http://localhost:3000/attendees', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ rsvpForm.addEventListener('submit', (e) => {
 // Function to cancel a reservation
 function cancelReservation(attendeeId) {
     // Send a DELETE request to remove the attendee from the mock server
-    fetch(`https://raw.githubusercontent.com/ChadKoo/wedding_rsvp/master/db.json/${attendeeId}`, {
+    fetch(`http://localhost:3000/${attendeeId}`, {
         method: 'DELETE',
     })
     .then(response => {
@@ -90,7 +90,7 @@ function cancelReservation(attendeeId) {
 
 // Load existing attendees from the mock server on page load
 window.addEventListener('load', () => {
-    fetch('https://raw.githubusercontent.com/ChadKoo/wedding_rsvp/master/db.json')
+    fetch('http://localhost:3000/attendees')
         .then(response => response.json())
         .then(data => {
             data.forEach(attendee => {
