@@ -70,7 +70,7 @@ rsvpForm.addEventListener('submit', (e) => {
 // Function to cancel a reservation
 function cancelReservation(attendeeId) {
     // Send a DELETE request to remove the attendee from the mock server
-    fetch(`http://localhost:3000/${attendeeId}`, {
+    fetch(`http://localhost:3000/attendees/${attendeeId}`, {
         method: 'DELETE',
     })
     .then(response => {
