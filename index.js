@@ -24,7 +24,7 @@ rsvpForm.addEventListener('submit', (e) => {
     };
 
     // Send the data to the server using fetch POST
-    fetch('https://wedding-rsvp-chi.vercel.app/pages/api/attendees', {
+    fetch('http://localhost:3000/attendees', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ rsvpForm.addEventListener('submit', (e) => {
 // Function to cancel a reservation
 function cancelReservation(attendeeId) {
     // Send a DELETE request to remove the attendee from the mock server
-    fetch(`https://wedding-rsvp-chi.vercel.app/pages/api/attendees/${attendeeId}`, {
+    fetch(`hhttp://localhost:3000/attendees/${attendeeId}`, {
         method: 'DELETE',
     })
     .then(response => {
@@ -97,7 +97,7 @@ function cancelReservation(attendeeId) {
 
 // Load existing attendees from the mock server on page load
 window.addEventListener('load', () => {
-    fetch('https://wedding-rsvp-chi.vercel.app/pages/api/attendees')
+    fetch('http://localhost:3000/attendees')
         .then(response => response.json())
         .then(data => {
             data.forEach(attendee => {
