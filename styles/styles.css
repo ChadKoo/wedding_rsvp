@@ -5,12 +5,12 @@
     overflow: auto;
  }
 #mainAbout {
-    margin-top: 150px;
+    margin-top: 40px;
     color: azure;
 }
 
 #contact{
-    margin-top: 150px;
+    margin-top: 50px;
     color: azure;
 }
  body {
@@ -24,16 +24,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;  
-    margin-top: 0;  
-    padding: 20px;
+    margin: 0;  
+    padding: 0;
     /* overflow-x: hidden; */
     height: auto;
     
 }
 
-#leftSide, #rightSide {
-    width: 45%
-  }
 #rightSide {
     padding-top: 10px;
     /* background-color: blueviolet; */
@@ -57,14 +54,12 @@
     
 }
 #rsvpForm{
-    padding-left: 5rem;
-    width: 250px;
+    padding-left: 1rem;
     height: 30px;
     font-size: 30px;
     /* padding: 10px; */
     /* border: 2px solid #ccc; */
-    border-radius: 5px;
-    outline: none;
+     outline: none;
     
 }
 #rsvpBtn:hover{
@@ -81,7 +76,7 @@
     cursor: pointer;
     border-radius: 100px;
     margin-top: 20px ;
-    margin-left: 100px;
+    margin-left: 2rem;
     font-size: 30px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -117,7 +112,7 @@ main {
 }
    
  
-    /* Style for the cancel button */
+    
 .cancelBtn {
     background-color: red;
     color: white;
@@ -131,8 +126,8 @@ main {
     background-color: darkred;
 }
 
-input, select, textarea { /* Target all form fields */
-    margin-bottom: 40px; /* Adds space between each input field */
+input, select, textarea {
+    margin-bottom: 40px; 
    
 }
 #p{
@@ -210,9 +205,8 @@ body {
 }
 
 .input {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 10px 0;
+    width: 75%;
+    padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
@@ -238,3 +232,19 @@ body {
         margin: 10px 0;
     }
 }
+
+#socialMedia{
+    padding-top: 50px;
+}
+#email{
+    padding-top: 50px;
+}
+#createdApp{
+    padding-top: 50px;
+}
+#journey{
+    padding-top: 50px;
+} 
+.aboutMeP{
+    padding: 0rem 15rem;
+}  
