@@ -72,7 +72,7 @@ rsvpForm.addEventListener('submit', (e) => {
 // Function to cancel a reservation
 function cancelReservation(attendeeId) {
     // Send a DELETE request to remove the attendee from the mock server
-    fetch(`https://wedding-rsvp-chi.vercel.app/api/attendees/${attendeeId}`, {
+    fetch(`https://wedding-rsvp-chi.vercel.app/pages/api/attendees/${attendeeId}`, {
         method: 'DELETE',
     })
     .then(response => {
