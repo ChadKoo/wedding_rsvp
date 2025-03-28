@@ -24,7 +24,7 @@ rsvpForm.addEventListener('submit', (e) => {
     };
 
     // Send the data to the server using fetch POST
-    fetch('https://wedding-rsvp-chi.vercel.app/api/attendees', {
+    fetch('https://wedding-rsvp-chi.vercel.app/pages/api/attendees', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ function cancelReservation(attendeeId) {
 
 // Load existing attendees from the mock server on page load
 window.addEventListener('load', () => {
-    fetch('https://wedding-rsvp-chi.vercel.app/api/attendees')
+    fetch('https://wedding-rsvp-chi.vercel.app/pages/api/attendees')
         .then(response => response.json())
         .then(data => {
             data.forEach(attendee => {
